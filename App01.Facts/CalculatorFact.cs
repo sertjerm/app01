@@ -73,6 +73,12 @@ namespace App01.Facts
                 Assert.Equal("3", result);
             }
 
+            [Fact]
+            public void AddTwoDigits()
+            {
+                var result = c.Add("11", "25");
+                Assert.Equal("36", result);
+            }
             public void Dispose()  //------------>teardown
             {
                 c = null;
